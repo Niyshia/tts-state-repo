@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <h1>States</h1>
-
+<hr>
+<em>pete was here</em>
 <table>
   <thead>
     <tr>
       <th>Name</th>
+      <th>Id</th>
       <th>Capital</th>
       <th>Population</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -16,6 +18,7 @@
     <% @states.each do |state| %>
       <tr>
         <td><%= state.name %></td>
+        <td><%= state.id %></td>
         <td><%= state.capital %></td>
         <td><%= state.population %></td>
         <td><%= link_to 'Show', state %></td>
